@@ -61,7 +61,7 @@ namespace Presentacion
             int nGrabados = -1;
             //llamo al método que carga los datos del objeto
             TxtBox_a_Obj();
-            nGrabados = objNegProf.abmProfesionales("Agregar", objEntProf); //invoco a la capa de negocio
+            nGrabados = objNegProf.abmProfesionales("Grabar", objEntProf); //invoco a la capa de negocio
             if (nGrabados == -1)
                 lblInfo.Text = "No pudo grabar profesionales en el sistema";
             else

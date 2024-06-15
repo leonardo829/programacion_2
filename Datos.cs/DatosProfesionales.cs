@@ -17,7 +17,7 @@ namespace Datos.cs
         {
             int resultado = -1;
             string orden = string.Empty;
-            if (accion == "Alta")
+            if (accion == "Grabar")
                 orden = "insert into Profesionales values (" + objProfesional.CodProf +
                 ",'" + objProfesional.Nombre + "');";
             if (accion == "Modificar")
