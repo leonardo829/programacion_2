@@ -21,7 +21,7 @@ namespace Datos.cs
                 orden = "insert into Profesionales values (" + objProfesional.CodProf +
                 ",'" + objProfesional.Nombre + "');";
             if (accion == "Modificar")
-                orden = "update Profesionales set Nombre='" + objProfesional.Nombre + "'where CodProf = "+ objProfesional.CodProf + "; ";
+                orden = "update Profesionales set Nombre='" + objProfesional.Nombre + "' where CodProf = "+ objProfesional.CodProf + "; ";
             // falta la orden de borrar
              SqlCommand cmd = new SqlCommand(orden, conexion);
             try
